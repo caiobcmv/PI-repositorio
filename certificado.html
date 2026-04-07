@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senac - Análise de Certificado</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="certificado.css">
+</head>
+<body>
+
+    <div class="layout-geral">
+        
+        <aside class="barra-lateral">
+            <div class="logo-secao">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Senac_logo.svg" alt="Senac">
+                <p>GESTÃO DE HORAS</p>
+            </div>
+
+            <nav class="menu-navegacao">
+                <a href="Dasboard.html" class="link-menu"><i class='bx bxs-dashboard'></i> Dashboard</a>
+                <a href="protocolo.html" class="link-menu active"><i class='bx bx-file'></i> Certificados</a>
+            </nav>
+
+            <div class="usuario-rodape">
+                <div class="foto-perfil"></div>
+                <div class="info-usuario">
+                    <strong>Dr. Ricardo Silva</strong>
+                    <small>COORDENADOR</small>
+                </div>
+                <a href="index.html" class="link-sair"><i class='bx bx-log-out'></i> Sair</a>
+            </div>
+        </aside>
+
+        <main class="conteudo-principal">
+            
+            <header class="cabecalho-topo">
+                <div class="abas-links">
+                    
+                    <a href="#" class="aba active">Certificados</a>
+                
+                </div>
+
+                <div class="acoes-usuario">
+                    <div class="caixa-busca">
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Buscar...">
+                    </div>
+                    <i class='bx bx-bell icon-header'></i>
+                    <i class='bx bx-cog icon-header'></i>
+                </div>
+            </header>
+
+            <section class="titulo-analise">
+                <h1>Análise de Certificado</h1>
+                <p>Protocolo #2023-AF82 • Atividade Complementar de Extensão Universitária</p>
+            </section>
+
+            <div class="grade-analise">
+                
+                <div class="container-preview">
+                    <div class="card-certificado">
+                        <div class="topo-cert">
+                            <i class='bx bx-book-reader icon-cert'></i>
+                        </div>
+                        <h2>CERTIFICADO</h2>
+                        <div class="linha-laranja"></div>
+                        <p class="texto-cert">
+                            Certificamos que o aluno(a) <strong>Gabriel Medeiros de Oliveira</strong> participou com êxito do workshop de <strong>Design de Interfaces e Experiência do Usuário</strong>, realizado entre os dias 15 e 18 de Agosto de 2023.
+                        </p>
+                        <div class="rodape-cert">
+                            <div>
+                                <small>CARGA HORÁRIA</small>
+                                <strong>40 Horas</strong>
+                            </div>
+                            <div class="text-right">
+                                <small>AUTENTICIDADE</small>
+                                <strong>REF: 902831-X</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="painel-decisao">
+                    
+                    <div class="cartao-info-aluno">
+                        <div class="header-info">INFORMAÇÕES DO PROTOCOLO</div>
+                        <div class="corpo-aluno">
+                            <div class="avatar-box"><i class='bx bx-user'></i></div>
+                            <div class="dados-aluno">
+                                <strong>Gabriel Medeiros de Oliveira</strong>
+                                <span>RA: 2209384 • 7º SEMESTRE - DESIGN</span>
+                            </div>
+                        </div>
+                        <div class="detalhes-carga">
+                            <div class="item-carga">
+                                <small>CARGA DECLARADA</small>
+                                <strong>40h 00m</strong>
+                            </div>
+                            <div class="item-carga">
+                                <small>TIPO DE ATIVIDADE</small>
+                                <span class="tag-atividade">CURSO LIVRE</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cartao-parecer">
+                        <div class="header-info">PARECER DO COORDENADOR</div>
+                        
+                        <div class="campo-form">
+                            <label>CARGA HORÁRIA DEFERIDA (HORAS)</label>
+                            <input type="number" value="40" class="input-horas">
+                            <small class="aviso-limite">O limite institucional para esta categoria é de 60 horas semestrais.</small>
+                        </div>
+
+                        <div class="campo-form">
+                            <label>OBSERVAÇÕES</label>
+                            <textarea placeholder="Justifique o parecer aqui..."></textarea>
+                        </div>
+
+                        <div class="acoes-decisao">
+                            <button class="btn-decisao reprovar">
+                                <i class='bx bx-x-circle'></i> REPROVAR
+                            </button>
+                            <button class="btn-decisao aprovar">
+                                <i class='bx bx-check-circle'></i> APROVAR
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="alerta-footer">
+                        <i class='bx bx-bulb'></i>
+                        <p><strong>IMPORTANTE:</strong> CERTIFICADOS DE CURSOS ONLINE PRECISAM CONTER OBRIGATORIAMENTE O CNPJ DA INSTITUIÇÃO EMISSORA PARA VALIDAÇÃO OFICIAL.</p>
+                    </div>
+                </aside>
+            </div>
+
+            <footer class="footer-bottom">
+                <div class="links-footer">
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Suporte Técnico</a>
+                </div>
+                <strong>Senac Brasil</strong>
+                <p>© 2024 Senac Brasil - Portal de Atividades Complementares</p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
