@@ -6,9 +6,9 @@ function acessarPortal() {
     if (perfilSelecionado === 'aluno') {
         window.location.href = 'Dasboard.html'; // Crie esta página depois
     } else if (perfilSelecionado === 'coordenador' || perfilSelecionado === 'secretaria') {
-        window.location.href = 'relatorios.html';
+        window.location.href = 'dashboardadm.html';
     } else if (perfilSelecionado === 'super-adm') {
-        window.location.href = 'superadmin.html'; // Crie esta página depois
+        window.location.href = 'configadm.html'; // Crie esta página depois
     } else {
         alert("Por favor, selecione um perfil.");
     }
