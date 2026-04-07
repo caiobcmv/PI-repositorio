@@ -146,7 +146,7 @@ form h1::after {
     text-decoration: underline;
 }
 /* Botão de Login (Laranja) */
-button[type="submit"] {
+.btn-login {
     width: 100%;
     padding: 13px;
     background: #d4800a;
@@ -160,13 +160,18 @@ button[type="submit"] {
     cursor: pointer;
     transition: background 0.2s, transform 0.1s;
     margin-bottom: 1.5rem;
+    display: block; /* Garante que o botão se comporte como bloco */
+    text-align: center;
+    text-decoration: none; /* Caso você decida usar uma tag <a> no futuro */
 }
 
-button[type="submit"]:hover {
+/* Efeito de passar o mouse no botão */
+.btn-login:hover {
     background: #b86e08;
 }
-/* Efeito de clique no botão */
-button[type="submit"]:active {
+
+/* Efeito de clique (press) no botão */
+.btn-login:active {
     transform: scale(0.98);
 }
 
@@ -233,3 +238,5 @@ form > div:last-child a:hover {
 .paragrafo {
     color: #ffffff; /* Ou color: white; */
 }
+
+
