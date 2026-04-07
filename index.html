@@ -11,33 +11,73 @@
 <body>
     <main class="container">
         <form>
-            <h1> login Senac </h1>
-            <div class="inputbox">
-                <input placeholder="Usuario" type="email">
-                <i class="bx bxs-user"></i>
+    <h1>Bem-vindo ao Portal</h1>
+    <p class="subtitle">Selecione seu perfil e insira suas credenciais.</p>
+
+    <div class="perfil-selector">
+        <label class="perfil-card">
+            <input type="radio" name="perfil" value="aluno">
+            <div class="card-content">
+                <i class='bx bx-user'></i>
+                <span>ALUNO</span>
             </div>
-            <div class="inputbox">
-                <input placeholder="Senha" type="password">
-                <i class="bx bxs-lock-alt"></i>
+        </label>
+
+        <label class="perfil-card">
+            <input type="radio" name="perfil" value="secretaria">
+            <div class="card-content">
+                <i class='bx bx-building-house'></i>
+                <span>SECRETARIA</span>
             </div>
-            <div class="esqueci-a-senha">
-                <label>
-                    <input type="checkbox">
-                    lembrar minha Senha
-                </label>
-                <a href="#">Esqueci minha Senha</a>
+        </label>
+
+        <label class="perfil-card">
+            <input type="radio" name="perfil" value="coordenador" checked>
+            <div class="card-content">
+                <i class='bx bx-user-voice'></i>
+                <span>COORDENADOR</span>
             </div>
-          <button type="button" class="btn-login" onclick="window.location.href='Dasboard.html'">login</button>
-            <div>
-                <p>Não tem uma conta <a href="#">Cadastre-se</a></p>
+        </label>
+
+        <label class="perfil-card">
+            <input type="radio" name="perfil" value="super-adm">
+            <div class="card-content">
+                <i class='bx bx-shield-quarter'></i>
+                <span>SUPER ADM</span>
             </div>
-        </form>
+        </label>
+    </div>
+
+    <div class="inputbox">
+        <label>USUÁRIO</label>
+        <input placeholder="Digite seu CPF ou e-mail" type="email" id="usuario">
+        <i class="bx bxs-user"></i>
+    </div>
+
+    <div class="inputbox">
+        <label>SENHA</label>
+        <input placeholder="••••••••" type="password" id="senha">
+        <i class="bx bxs-lock-alt"></i>
+    </div>
+
+    <div class="esqueci-a-senha">
+        <label><input type="checkbox"> Lembrar acesso</label>
+        <a href="#">Esqueceu a senha?</a>
+    </div>
+
+    <button type="button" class="btn-login" onclick="acessarPortal()">
+        Acessar Portal <i class='bx bx-right-arrow-alt'></i>
+    </button>
+</form>
+    
+        
 
         <div class="logo-panel">
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/86/Senac_logo.svg" alt="Senac" class="logo">
             <h2>Excelência na<br>Educação Profissional</h2>
             <p class="paragrafo">Transformando vidas através do conhecimento e preparando você para os desafios do mercado global.</p>
         </div>
+        
     </main>
 </body>
 </html>

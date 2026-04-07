@@ -238,5 +238,85 @@ form > div:last-child a:hover {
 .paragrafo {
     color: #ffffff; /* Ou color: white; */
 }
+/* Subtítulo do formulário */
+.subtitle {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 2rem;
+}
 
+/* Container dos botões de perfil */
+.perfil-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+/* Esconde o input radio real */
+.perfil-card input {
+    display: none;
+}
+
+/* Estilização do card visual */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 5px;
+    background: #f8fafc;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-content i {
+    font-size: 20px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.card-content span {
+    font-size: 9px;
+    font-weight: 700;
+    color: #64748b;
+    text-align: center;
+}
+
+/* Efeito de seleção (Laranja igual ao print) */
+.perfil-card input:checked + .card-content {
+    background: #fff;
+    border-color: #d4800a;
+    box-shadow: 0 4px 12px rgba(212, 128, 10, 0.15);
+}
+
+.perfil-card input:checked + .card-content i,
+.perfil-card input:checked + .card-content span {
+    color: #1a2e5a;
+}
+
+/* Labels dos campos de input */
+.inputbox label {
+    display: block;
+    font-size: 10px;
+    font-weight: 700;
+    color: #94a3b8;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+/* Ajuste no botão de login para incluir o ícone lateral */
+.btn-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #004a8e; /* Azul igual ao novo botão do print */
+}
+
+.btn-login:hover {
+    background: #003566;
+}
 
